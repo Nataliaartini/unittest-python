@@ -4,8 +4,10 @@ def soma(x,y):
     >>> soma(10,20)
     30
 
-    >>> soma(-10, 50)
-    40
+    >>> soma("-10", 50)
+    Traceback (most recent call last):
+    ...
+    AssertionError: X precisa ser um numero natural ou decimal!
 
     """
 
