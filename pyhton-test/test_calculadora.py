@@ -13,5 +13,4 @@ class TestCalculadora(unittest.TestCase):
         self.assertEqual(soma(-5, 5), 0)
 
 
-
 unittest.main()
