@@ -1,6 +1,3 @@
-from ntpath import join
-
-
 def soma(x,y):
     """
 
