@@ -43,4 +43,5 @@ class TestCafeDaManha(unittest.TestCase):
                 self.assertEqual(cafe_da_manha(j), sai, msg=f"{j} nao retornou {sai}")
 
 
-unittest.main(verbosity=2)
+if __name__ == "__main__":
+    unittest.main(verbosity=2)
