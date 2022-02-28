@@ -7,12 +7,12 @@ from typing import List, Union, Tuple, Dict, NewType, Callable, Sequence, \
 numero: int = 10
 flutuante: float = 10.5
 booleano: bool = False
-string: str = 'Luiz Otávio'
+string: str = 'Natalia Artini'
 
 # Sequências
 lista: List[int] = [1, 2, 3]
-lista_str_int: List[Union[int, str]] = [1, 2, 3, 'Luiz']
-tupla: Tuple[int, int, int, str] = (1, 2, 3, 'Luiz')
+lista_str_int: List[Union[int, str]] = [1, 2, 3, 'Natalia']
+tupla: Tuple[int, int, int, str] = (1, 2, 3, 'Natalia')
 
 # Dicionários e conjuntos
 
@@ -20,9 +20,9 @@ tupla: Tuple[int, int, int, str] = (1, 2, 3, 'Luiz')
 MeuDict = Dict[str, Union[str, int, List[int]]]  # Alias
 
 pessoa: Dict[str, Union[str, int]] = {
-    'nome': 'Luiz Otávio', 'sobrenome': 'Miranda', 'idade': 30}
-pessoa2: MeuDict = {'nome': 'Luiz Otávio',
-                    'sobrenome': 'Miranda', 'idade': 30, 'l': [1, 2]}
+    'nome': 'Natalia', 'sobrenome': 'Artini', 'idade': 21}
+pessoa2: MeuDict = {'nome': 'Natalia',
+                    'sobrenome': 'Artini', 'idade': 21, 'l': [1, 2]}
 
 # Meu outro tipo
 UserId = NewType('UserId', int)
