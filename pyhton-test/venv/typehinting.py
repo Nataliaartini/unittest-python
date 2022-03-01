@@ -19,10 +19,9 @@ tupla: Tuple[int, int, int, str] = (1, 2, 3, 'Natalia')
 # Meu tipo
 MeuDict = Dict[str, Union[str, int, List[int]]]  # Alias
 
-pessoa: Dict[str, Union[str, int]] = {
-    'nome': 'Natalia', 'sobrenome': 'Artini', 'idade': 21}
-pessoa2: MeuDict = {'nome': 'Natalia',
-                    'sobrenome': 'Artini', 'idade': 21, 'l': [1, 2]}
+pessoa: Dict[str, Union[str, int]] = {'nome': 'Natalia', 'sobrenome': 'Artini', 'idade': 21}
+pessoa2: MeuDict = {'nome': 'Fernando', 'sobrenome': 'Kressling', 'idade': 35, 'l': [1, 2]}
+# pessoa 2 está usando o alias declarado acima como MeuDict.
 
 # Meu outro tipo
 UserId = NewType('UserId', int)
@@ -35,6 +34,7 @@ def retorna_funcao(funcao: Callable[[int, int], int]) -> Callable:
 
 def soma(x: int, y: int) -> int:
     return x + y
+# está recebendo parametros conforme declarados em callable
 
 
 print(retorna_funcao(soma)(10, 20))
@@ -55,7 +55,7 @@ def iterar(sequencia: Sequence[int]):
 
 
 def iterar2(sequencia: Iterable[int]):
-    return [x for x in sequencia]
+    return [x * 2 for x in sequencia]
 
 
 print(iterar([1, 2, 3]))
